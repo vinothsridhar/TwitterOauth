@@ -1,6 +1,0 @@
-package twitteroauthview.sample;
-
-public interface OauthSuccessListener
-{
-    public void isSuccess(boolean isSuccess);
-}

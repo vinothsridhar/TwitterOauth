@@ -1,5 +1,0 @@
-INDEX VERSION 1.126+/home/sridhar/workspace/TwitterOauth/.metadata/.plugins/org.eclipse.jdt.core
-2071804153.index
-1415693123.index
-798651160.index
-1712173210.index

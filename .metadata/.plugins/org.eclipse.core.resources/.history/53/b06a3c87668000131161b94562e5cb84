@@ -1,9 +1,0 @@
-package twitteroauthview.sample;
-
-public class Friends
-{
-	String name;
-	String email;
-	String id;
-	String image;
-}

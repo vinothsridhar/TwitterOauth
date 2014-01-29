@@ -1,9 +1,0 @@
-package com.reviews42.muneemji.invitefriends;
-
-public class Friends
-{
-	String name;
-	String email;
-	String id;
-	String image;
-}
