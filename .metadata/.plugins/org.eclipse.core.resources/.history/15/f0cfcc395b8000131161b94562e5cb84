@@ -1,0 +1,142 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+  
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+
+    <style name="CustomRatingBarBad" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_bad</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+
+    <style name="layout_f_w">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="h_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/tabs_baseline</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tabs_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+
+    <style name="tabs_text_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tabs_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+
+    <style name="text_option">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="indicator_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/tabs_indicator</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="indicator_style_inside">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sliding_bar_inside</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">-10dip</item>
+    </style>
+
+    <style name="noResultFoundTextStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Animations" />
+
+    <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="EmiText">
+        <item name="android:textColor">#D56E29</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:paddingLeft">3dp</item>
+    </style>
+
+    <style name="emiindicatortext">
+        <item name="android:textColor">#2b2b2b</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_close</item>
+    </style>
+    
+    <style name="popupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_close</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@drawable/trans_dialog</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/dialogAnimation</item>
+    </style>
+
+    <style name="filter_title">
+        <item name="android:textColor">#C46826</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

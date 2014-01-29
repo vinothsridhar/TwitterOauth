@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="twitter4j.Twitter"/>
+<fullyQualifiedTypeName name="twitter4j.conf.ConfigurationBuilder"/>
+<fullyQualifiedTypeName name="twitter4j.TwitterFactory"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout.LayoutParams"/>
+<fullyQualifiedTypeName name="com.neovisionaries.android.twitter.TwitterOAuthView.Listener"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.PointsHistory"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.OauthSuccessListener"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="android.preference.PreferenceManager"/>
+<fullyQualifiedTypeName name="twitter4j.auth.AccessToken"/>
+<fullyQualifiedTypeName name="android.widget.ProgressBar"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.AuthDialog"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.Friends"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.R42ImageLoader"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.TwitterOAuthView.Result"/>
+<fullyQualifiedTypeName name="android.widget.AbsListView.OnScrollListener"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="twitter4j.Paging"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="twitter4j.Status"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.MainActivity.FriendsAdapter"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.MainActivity.LoadingPointsHistory"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.MainActivity.EndlessScrollListener"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.R.id"/>
+<fullyQualifiedTypeName name="android.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
+<fullyQualifiedTypeName name="com.google.android.gms.maps.SupportMapFragment"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.MainActivity"/>
+<fullyQualifiedTypeName name="twitteroauthview.sample.ViewMap"/>
+</qualifiedTypeNameHistroy>

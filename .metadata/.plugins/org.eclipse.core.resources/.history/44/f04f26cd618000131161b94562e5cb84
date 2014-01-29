@@ -1,0 +1,95 @@
+package twitteroauthview.sample;
+
+
+import java.util.List;
+import twitter4j.Status;
+import twitter4j.Twitter;
+import twitter4j.TwitterException;
+import twitter4j.TwitterFactory;
+import twitter4j.auth.AccessToken;
+import twitter4j.conf.ConfigurationBuilder;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.view.Window;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+import com.neovisionaries.android.twitter.TwitterOAuthView;
+import com.neovisionaries.android.twitter.TwitterOAuthView.Result;
+
+
+public class AuthDialog implements TwitterOAuthView.Listener
+{
+
+    Context context;
+    Dialog dialog;
+
+    private TwitterOAuthView view;
+    LinearLayout relativelayout;
+    ProgressBar progress;
+    SharedPreferences pref;
+
+    public AuthDialog(Context c)
+    {
+        context = c;
+        pref=PreferenceManager.getDefaultSharedPreferences(c);
+        dialog = new Dialog(context, R.style.CustomDialog);// ,android.R.style.Theme_Translucent_NoTitleBar);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        view = new TwitterOAuthView(context);
+        view.setDebugEnabled(true);
+        dialog.setContentView(R.layout.auth_dialog);
+        relativelayout=(LinearLayout)dialog.findViewById(R.id.layout);
+        relativelayout.addView(view);
+        progress=(ProgressBar)dialog.findViewById(R.id.progressBar);
+        view.setProgressBar(progress);
+        //dialog.addContentView(view, new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
+
+        view.start(Constants.CONSUMER_KEY, Constants.CONSUMER_SECRET, Constants.CALLBACK_URL, Constants.DUMMY_CALLBACK_URL, this);
+        dialog.show();
+
+    }
+
+
+    public void onSuccess(TwitterOAuthView view, AccessToken accessToken)
+    {
+        // TODO Auto-generated method stub
+        showMessage("Authorized by " + accessToken.getScreenName());
+        view.cancel();
+        System.out.println("Token:" + accessToken.getToken());
+        ConfigurationBuilder cb = new ConfigurationBuilder();
+        cb.setDebugEnabled(true).setOAuthConsumerKey(CONSUMER_KEY).setOAuthConsumerSecret(CONSUMER_SECRET)
+                .setOAuthAccessToken(accessToken.getToken()).setOAuthAccessTokenSecret(accessToken.getTokenSecret());
+
+        TwitterFactory tf = new TwitterFactory(cb.build());
+        Twitter twitter = tf.getInstance(accessToken);
+        try
+        {
+            List<Status> statuses = twitter.getHomeTimeline();
+            for (int i = 0; i < statuses.size(); i++)
+                System.out.println(statuses.get(i));
+        }
+        catch (TwitterException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public void onFailure(TwitterOAuthView view, Result result)
+    {
+        // TODO Auto-generated method stub
+        showMessage("Failed due to " + result);
+    }
+
+
+    private void showMessage(String message)
+    {
+        // Show a popup message.
+        Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+    }
+
+}
